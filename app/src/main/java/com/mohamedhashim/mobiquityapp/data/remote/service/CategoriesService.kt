@@ -9,5 +9,6 @@ import retrofit2.http.GET
  */
 
 interface CategoriesService {
-
+    @GET("/")
+    fun fetchCategories(): Call<List<Category>>
 }
