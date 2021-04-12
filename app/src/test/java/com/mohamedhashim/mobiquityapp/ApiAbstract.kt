@@ -1,4 +1,4 @@
-package com.mohamedhashim.mobiquity
+package com.mohamedhashim.mobiquityapp
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import okhttp3.mockwebserver.MockResponse

@@ -1,6 +1,5 @@
 package com.mohamedhashim.mobiquityapp
 
-import com.mohamedhashim.mobiquity.ApiAbstract
 import com.mohamedhashim.mobiquityapp.data.remote.ApiResponse
 import com.mohamedhashim.mobiquityapp.data.remote.service.CategoriesService
 import com.mohamedhashim.mobiquityapp.data.remote.transform

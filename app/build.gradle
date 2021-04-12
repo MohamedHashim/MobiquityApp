@@ -17,6 +17,12 @@ android {
         versionName "1.0"
         multiDexEnabled = true
 
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -98,7 +104,6 @@ dependencies {
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.6'
 
     // unit & UI testing
-    testImplementation 'junit:junit:4.13.2'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     testImplementation "org.robolectric:robolectric:4.5.1"

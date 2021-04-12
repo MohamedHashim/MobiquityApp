@@ -1,4 +1,4 @@
-package com.mohamedhashim.mobiquity.data.entities.dto
+package com.mohamedhashim.mobiquityapp.data.entities.dto
 
 import android.os.Parcelable
 import androidx.room.Entity
@@ -8,9 +8,10 @@ import kotlinx.android.parcel.Parcelize
 /**
  * Created by Mohamed Hashim on 4/12/2021.
  */
+@Entity
 @Parcelize
 class Category(
-    val id: String,
+    @PrimaryKey val id: String,
     val name: String,
     val description: String,
     val products: List<Product>

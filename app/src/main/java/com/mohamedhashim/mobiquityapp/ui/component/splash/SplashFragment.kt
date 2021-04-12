@@ -21,7 +21,6 @@ class SplashFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_splash, container, false)
     }
 
-    //TODO addd simple ui test to oopen details screen
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         MainScope().launch {

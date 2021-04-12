@@ -1,4 +1,4 @@
-package com.mohamedhashim.mobiquity
+package com.mohamedhashim.mobiquityapp
 
 import com.mohamedhashim.mobiquityapp.data.entities.dto.Category
 import com.mohamedhashim.mobiquityapp.data.entities.dto.Product

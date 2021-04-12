@@ -1,10 +1,11 @@
-package com.mohamedhashim.mobiquity.data.remote.repository
+package com.mohamedhashim.mobiquityapp.data.remote.repository
 
 import androidx.lifecycle.MutableLiveData
-import com.mohamedhashim.mobiquity.data.entities.dto.Category
-import com.mohamedhashim.mobiquity.data.remote.ApiResponse
-import com.mohamedhashim.mobiquity.data.remote.client.CategoriesClient
-import com.mohamedhashim.mobiquityapp.data.message
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Category
+import com.mohamedhashim.mobiquityapp.data.local.dao.CategoriesDao
+import com.mohamedhashim.mobiquityapp.data.remote.ApiResponse
+import com.mohamedhashim.mobiquityapp.data.remote.client.CategoriesClient
+import com.mohamedhashim.mobiquityapp.data.remote.message
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
@@ -13,7 +14,8 @@ import kotlinx.coroutines.withContext
  */
 
 class CategoriesRepository constructor(
-    private val categoriesClient: CategoriesClient
+    private val categoriesClient: CategoriesClient,
+    private val categoriesDao: CategoriesDao
 ) {
 
     suspend fun loadCategories(error: (String) -> Unit) =
@@ -25,19 +27,24 @@ class CategoriesRepository constructor(
                     is ApiResponse.Success -> {
                         response.data?.let { data ->
                             categories = data
+                            categoriesDao.insertCategories(categories)
                             liveData.postValue(categories)
                         }
                     }
                     is ApiResponse.Failure.Error -> {
                         error(response.message())
+                        categories = getLocalCategories()
                         liveData.postValue(categories)
                     }
                     is ApiResponse.Failure.Exception -> {
                         error(response.message())
+                        categories = getLocalCategories()
                         liveData.postValue(categories)
                     }
                 }
             }
             liveData.apply { postValue(categories) }
         }
+
+    private fun getLocalCategories() = categoriesDao.getCategories()
 }
