@@ -1,8 +1,8 @@
-package com.mohamedhashim.mobiquity_private.data.remote.client
+package com.mohamedhashim.mobiquity.data.remote.client
 
-import com.mohamedhashim.mobiquity_private.data.entities.dto.Category
-import com.mohamedhashim.mobiquity_private.data.remote.ApiResponse
-import com.mohamedhashim.mobiquity_private.data.remote.service.CategoriesService
+import com.mohamedhashim.mobiquity.data.entities.dto.Category
+import com.mohamedhashim.mobiquity.data.remote.ApiResponse
+import com.mohamedhashim.mobiquity.data.remote.service.CategoriesService
 import com.mohamedhashim.mobiquityapp.data.transform
 
 /**

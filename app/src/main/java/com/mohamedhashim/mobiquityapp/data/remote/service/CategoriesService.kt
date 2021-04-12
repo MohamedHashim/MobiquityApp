@@ -1,6 +1,6 @@
-package com.mohamedhashim.mobiquity_private.data.remote.service
+package com.mohamedhashim.mobiquity.data.remote.service
 
-import com.mohamedhashim.mobiquity_private.data.entities.dto.Category
+import com.mohamedhashim.mobiquity.data.entities.dto.Category
 import retrofit2.Call
 import retrofit2.http.GET
 

@@ -1,10 +1,10 @@
-package com.mohamedhashim.mobiquity_private.ui.component.details
+package com.mohamedhashim.mobiquity.ui.component.details
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.mohamedhashim.mobiquity_private.ui.base.bindings.DataBindingFragment
+import com.mohamedhashim.mobiquity.ui.base.bindings.DataBindingFragment
 import com.mohamedhashim.mobiquityapp.R
 import com.mohamedhashim.mobiquityapp.databinding.FragmentProductDetailsBinding
 

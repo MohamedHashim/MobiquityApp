@@ -1,9 +1,9 @@
-package com.mohamedhashim.mobiquity_private.data.remote.repository
+package com.mohamedhashim.mobiquity.data.remote.repository
 
 import androidx.lifecycle.MutableLiveData
-import com.mohamedhashim.mobiquity_private.data.entities.dto.Category
-import com.mohamedhashim.mobiquity_private.data.remote.ApiResponse
-import com.mohamedhashim.mobiquity_private.data.remote.client.CategoriesClient
+import com.mohamedhashim.mobiquity.data.entities.dto.Category
+import com.mohamedhashim.mobiquity.data.remote.ApiResponse
+import com.mohamedhashim.mobiquity.data.remote.client.CategoriesClient
 import com.mohamedhashim.mobiquityapp.data.message
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

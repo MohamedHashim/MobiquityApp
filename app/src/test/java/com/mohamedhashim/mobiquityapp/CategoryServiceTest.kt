@@ -1,7 +1,7 @@
-package com.mohamedhashim.mobiquity_private
+package com.mohamedhashim.mobiquity
 
-import com.mohamedhashim.mobiquity_private.data.remote.ApiResponse
-import com.mohamedhashim.mobiquity_private.data.remote.service.CategoriesService
+import com.mohamedhashim.mobiquity.data.remote.ApiResponse
+import com.mohamedhashim.mobiquity.data.remote.service.CategoriesService
 import com.mohamedhashim.mobiquityapp.data.transform
 import org.hamcrest.CoreMatchers
 import org.hamcrest.MatcherAssert

@@ -1,4 +1,4 @@
-package com.mohamedhashim.mobiquity_private.ui.component.splash
+package com.mohamedhashim.mobiquity.ui.component.splash
 
 import android.os.Bundle
 import android.view.LayoutInflater

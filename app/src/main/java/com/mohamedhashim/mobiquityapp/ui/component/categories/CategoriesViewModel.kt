@@ -1,6 +1,6 @@
-package com.mohamedhashim.mobiquity_private.ui.component.categories
+package com.mohamedhashim.mobiquity.ui.component.categories
 
-import com.mohamedhashim.mobiquity_private.data.remote.repository.CategoriesRepository
+import com.mohamedhashim.mobiquity.data.remote.repository.CategoriesRepository
 import com.mohamedhashim.mobiquityapp.ui.base.LiveCoroutinesViewModel
 
 /**

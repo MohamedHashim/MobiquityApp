@@ -1,6 +1,6 @@
-package com.mohamedhashim.mobiquity_private
+package com.mohamedhashim.mobiquity
 
-import com.mohamedhashim.mobiquity_private.data.remote.ApiResponse
+import com.mohamedhashim.mobiquity.data.remote.ApiResponse
 import okhttp3.ResponseBody
 import org.hamcrest.CoreMatchers
 import org.hamcrest.MatcherAssert
