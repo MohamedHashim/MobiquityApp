@@ -1,4 +1,4 @@
-package com.mohamedhashim.mobiquity.ui.base
+package com.mohamedhashim.mobiquityapp.ui.base
 
 import android.view.View
 import androidx.databinding.DataBindingUtil

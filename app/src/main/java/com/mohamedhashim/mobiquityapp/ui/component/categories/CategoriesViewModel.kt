@@ -1,16 +1,16 @@
-package com.mohamedhashim.mobiquity.ui.component.categories
+package com.mohamedhashim.mobiquityapp.ui.component.categories
 
 import android.os.Bundle
 import androidx.lifecycle.LiveData
-import com.mohamedhashim.mobiquity.data.entities.dto.Category
-import com.mohamedhashim.mobiquity.data.entities.dto.Product
-import com.mohamedhashim.mobiquity.data.remote.repository.CategoriesRepository
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Category
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Product
+import com.mohamedhashim.mobiquityapp.data.remote.repository.CategoriesRepository
 import com.mohamedhashim.mobiquityapp.ui.base.LiveCoroutinesViewModel
 
 /**
  * Created by Mohamed Hashim on 4/12/2021.
  */
-class CategoriesViewModel  constructor(
+class CategoriesViewModel constructor(
     private val categoriesRepository: CategoriesRepository
 ) : LiveCoroutinesViewModel() {
 

@@ -1,6 +1,5 @@
-package com.mohamedhashim.mobiquityapp.data
+package com.mohamedhashim.mobiquityapp.data.remote
 
-import com.mohamedhashim.mobiquity.data.remote.ApiResponse
 import retrofit2.Call
 import retrofit2.Callback
 

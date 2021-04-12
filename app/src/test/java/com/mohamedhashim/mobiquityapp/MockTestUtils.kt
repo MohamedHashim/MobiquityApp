@@ -1,8 +1,8 @@
-package com.mohamedhashim.mobiquity
+package com.mohamedhashim.mobiquityapp
 
-import com.mohamedhashim.mobiquity.data.entities.dto.Category
-import com.mohamedhashim.mobiquity.data.entities.dto.Product
-import com.mohamedhashim.mobiquity.data.entities.dto.SalePrice
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Category
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Product
+import com.mohamedhashim.mobiquityapp.data.entities.dto.SalePrice
 
 /**
  * Created by Mohamed Hashim on 4/12/2021.

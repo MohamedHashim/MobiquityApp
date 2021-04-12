@@ -1,6 +1,6 @@
-package com.mohamedhashim.mobiquity.di
+package com.mohamedhashim.mobiquityapp.di
 
-import com.mohamedhashim.mobiquity.ui.component.categories.CategoriesViewModel
+import com.mohamedhashim.mobiquityapp.ui.component.categories.CategoriesViewModel
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

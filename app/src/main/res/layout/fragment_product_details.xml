@@ -7,7 +7,7 @@
 
         <variable
             name="product"
-            type="com.mohamedhashim.mobiquity.data.entities.dto.Product" />
+            type="com.mohamedhashim.mobiquityapp.data.entities.dto.Product" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

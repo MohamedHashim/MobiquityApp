@@ -1,16 +1,15 @@
-package com.mohamedhashim.mobiquity.ui.component.categories
+package com.mohamedhashim.mobiquityapp.ui.component.categories
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import com.mohamedhashim.mobiquity.data.entities.dto.Category
-import com.mohamedhashim.mobiquity.data.entities.dto.Product
-import com.mohamedhashim.mobiquity.ui.base.bindings.DataBindingFragment
-import com.mohamedhashim.mobiquity.ui.component.categories.viewholder.CategoriesViewHolder
-import com.mohamedhashim.mobiquity.ui.component.categories.viewholder.ProductsViewHolder
+import android.view.*
+import androidx.lifecycle.Observer
 import com.mohamedhashim.mobiquityapp.R
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Category
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Product
 import com.mohamedhashim.mobiquityapp.databinding.FragmentCategoriesListBinding
+import com.mohamedhashim.mobiquityapp.ui.base.bindings.DataBindingFragment
+import com.mohamedhashim.mobiquityapp.ui.component.categories.viewholder.CategoriesViewHolder
+import com.mohamedhashim.mobiquityapp.ui.component.categories.viewholder.ProductsViewHolder
 import kotlinx.android.synthetic.main.fragment_categories_list.*
 import org.koin.android.viewmodel.ext.android.viewModel
 import smartadapter.SmartRecyclerAdapter
@@ -19,7 +18,7 @@ import smartadapter.stickyheader.StickyHeaderItemDecorationExtension
 /**
  * Created by Mohamed Hashim on 4/12/2021.
  */
-class CategoriesFragment: DataBindingFragment() {
+class CategoriesFragment : DataBindingFragment() {
 
     private val viewModel: CategoriesViewModel by viewModel()
     private lateinit var binding: FragmentCategoriesListBinding

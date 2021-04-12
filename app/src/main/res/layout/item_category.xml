@@ -8,7 +8,7 @@
 
         <variable
             name="category"
-            type="com.mohamedhashim.mobiquity.data.entities.dto.Category" />
+            type="com.mohamedhashim.mobiquityapp.data.entities.dto.Category" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

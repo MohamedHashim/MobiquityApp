@@ -1,15 +1,17 @@
-package com.mohamedhashim.mobiquity
+package com.mohamedhashim.mobiquityapp
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
-import com.mohamedhashim.mobiquity.ApiUtil.getCall
-import com.mohamedhashim.mobiquity.MockTestUtils.Companion.mockCategoriesList
-import com.mohamedhashim.mobiquity.data.entities.dto.Category
-import com.mohamedhashim.mobiquity.data.remote.ApiResponse
-import com.mohamedhashim.mobiquity.data.remote.client.CategoriesClient
-import com.mohamedhashim.mobiquity.data.remote.repository.CategoriesRepository
-import com.mohamedhashim.mobiquity.data.remote.service.CategoriesService
+import com.mohamedhashim.mobiquityapp.ApiUtil.getCall
+import com.mohamedhashim.mobiquityapp.MockTestUtils.Companion.mockCategoriesList
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Category
+import com.mohamedhashim.mobiquityapp.data.local.dao.CategoriesDao
+import com.mohamedhashim.mobiquityapp.data.remote.ApiResponse
+import com.mohamedhashim.mobiquityapp.data.remote.client.CategoriesClient
+import com.mohamedhashim.mobiquityapp.data.remote.repository.CategoriesRepository
+import com.mohamedhashim.mobiquityapp.data.remote.service.CategoriesService
 import com.nhaarman.mockitokotlin2.mock
+import com.nhaarman.mockitokotlin2.times
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever
 import junit.framework.Assert.assertEquals
@@ -29,6 +31,7 @@ class CategoriesRepositoryTest {
     private lateinit var repository: CategoriesRepository
     private lateinit var client: CategoriesClient
     private val service = mock<CategoriesService>()
+    private val categoriesDao = mock<CategoriesDao>()
 
     @get:Rule
     var instantExecutorRule = InstantTaskExecutorRule()
@@ -36,18 +39,20 @@ class CategoriesRepositoryTest {
     @Before
     fun setup() {
         client = CategoriesClient(service)
-        repository = CategoriesRepository(client)
+        repository = CategoriesRepository(client, categoriesDao)
     }
 
     @Test
     fun loadCategoriesFromNetworkTest() = runBlocking {
         val mockResponse = mockCategoriesList()
         whenever(service.fetchCategories()).thenReturn(getCall(mockResponse))
+
         val data = repository.loadCategories {}
 
         val observer = mock<Observer<List<Category>>>()
         data.observeForever(observer)
         val updatedData = mockCategoriesList()
+        whenever(categoriesDao.getCategories()).thenReturn(updatedData)
 
         data.postValue(updatedData)
         verify(observer).onChanged(updatedData)
@@ -57,10 +62,7 @@ class CategoriesRepositoryTest {
                 is ApiResponse.Success -> {
                     assertEquals(it.data, `is`(mockResponse))
                 }
-                else -> MatcherAssert.assertThat(
-                    it,
-                    CoreMatchers.instanceOf(ApiResponse.Failure::class.java)
-                )
+                else -> MatcherAssert.assertThat(it, CoreMatchers.instanceOf(ApiResponse.Failure::class.java))
             }
         }
     }
