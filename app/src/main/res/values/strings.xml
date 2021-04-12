@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MobiquityApp</string>
+    <string name="product_name">product name</string>
+    <string name="product_image">product image</string>
+    <string name="product_key">Product</string>
+    <string name="database">Categories.db</string>
+    <string name="price">Price : </string>
 </resources>

@@ -1,10 +1,10 @@
 package com.mohamedhashim.mobiquityapp
 
 import android.app.Application
-import com.mohamedhashim.mobiquity_private.di.networkModule
-import com.mohamedhashim.mobiquity_private.di.persistenceModule
-import com.mohamedhashim.mobiquity_private.di.repositoryModule
-import com.mohamedhashim.mobiquity_private.di.viewModelModule
+import com.mohamedhashim.mobiquity.di.networkModule
+import com.mohamedhashim.mobiquity.di.persistenceModule
+import com.mohamedhashim.mobiquity.di.repositoryModule
+import com.mohamedhashim.mobiquity.di.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 

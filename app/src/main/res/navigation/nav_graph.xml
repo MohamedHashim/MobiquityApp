@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.mohamedhashim.mobiquity_private.ui.component.splash.SplashFragment"
+        android:name="com.mohamedhashim.mobiquity.ui.component.splash.SplashFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_splash">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/categoriesFragment"
-        android:name="com.mohamedhashim.mobiquity_private.ui.component.categories.CategoriesFragment"
+        android:name="com.mohamedhashim.mobiquity.ui.component.categories.CategoriesFragment"
         android:label="ProductListFragment"
         tools:layout="@layout/fragment_categories_list">
         <action
@@ -27,7 +27,7 @@
 
     <fragment
         android:id="@+id/productDetailsFragment"
-        android:name="com.mohamedhashim.mobiquity_private.ui.component.details.ProductDetailsFragment"
+        android:name="com.mohamedhashim.mobiquity.ui.component.details.ProductDetailsFragment"
         android:label="ProductDetailsFragment"
         tools:layout="@layout/fragment_product_details" />
 

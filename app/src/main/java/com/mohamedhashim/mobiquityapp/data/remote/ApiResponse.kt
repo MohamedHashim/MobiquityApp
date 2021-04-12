@@ -1,4 +1,4 @@
-package com.mohamedhashim.mobiquity_private.data.remote
+package com.mohamedhashim.mobiquity.data.remote
 
 import okhttp3.ResponseBody
 import retrofit2.Response

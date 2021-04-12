@@ -1,4 +1,4 @@
-package com.mohamedhashim.mobiquity_private.di
+package com.mohamedhashim.mobiquity.di
 
 import org.koin.dsl.module
 
