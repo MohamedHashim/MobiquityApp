@@ -1,6 +1,6 @@
 package com.mohamedhashim.mobiquity
 
-import com.mohamedhashim.mobiquity.data.entities.dto.Category
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Category
 import okhttp3.Request
 import okio.Timeout
 import retrofit2.Call

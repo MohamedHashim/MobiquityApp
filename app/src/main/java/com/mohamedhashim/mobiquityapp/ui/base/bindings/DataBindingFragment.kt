@@ -1,4 +1,4 @@
-package com.mohamedhashim.mobiquity.ui.base.bindings
+package com.mohamedhashim.mobiquityapp.ui.base.bindings
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

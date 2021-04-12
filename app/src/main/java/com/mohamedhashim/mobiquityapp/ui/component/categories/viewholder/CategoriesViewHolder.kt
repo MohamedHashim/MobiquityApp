@@ -1,11 +1,11 @@
-package com.mohamedhashim.mobiquity.ui.component.categories.viewholder
+package com.mohamedhashim.mobiquityapp.ui.component.categories.viewholder
 
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import com.mohamedhashim.mobiquity.data.entities.dto.Category
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Category
+import com.mohamedhashim.mobiquityapp.ui.base.bindings.inflate
 import com.mohamedhashim.mobiquityapp.R
 import com.mohamedhashim.mobiquityapp.databinding.ItemCategoryBinding
-import com.mohamedhashim.mobiquityapp.ui.base.bindings.inflate
 import smartadapter.viewholder.SmartViewHolder
 
 /**

@@ -1,4 +1,4 @@
-package com.mohamedhashim.mobiquity.data.entities.dto
+package com.mohamedhashim.mobiquityapp.data.entities.dto
 
 import android.os.Parcelable
 import androidx.room.Entity

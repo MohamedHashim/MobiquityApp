@@ -1,8 +1,9 @@
-package com.mohamedhashim.mobiquity
+package com.mohamedhashim.mobiquityapp
 
-import com.mohamedhashim.mobiquity.data.remote.ApiResponse
-import com.mohamedhashim.mobiquity.data.remote.service.CategoriesService
-import com.mohamedhashim.mobiquityapp.data.transform
+import com.mohamedhashim.mobiquity.ApiAbstract
+import com.mohamedhashim.mobiquityapp.data.remote.ApiResponse
+import com.mohamedhashim.mobiquityapp.data.remote.service.CategoriesService
+import com.mohamedhashim.mobiquityapp.data.remote.transform
 import org.hamcrest.CoreMatchers
 import org.hamcrest.MatcherAssert
 import org.junit.Before

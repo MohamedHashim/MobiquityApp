@@ -1,4 +1,4 @@
-package com.mohamedhashim.mobiquity.ui.component.details
+package com.mohamedhashim.mobiquityapp.ui.component.details
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import com.mohamedhashim.mobiquity.data.entities.dto.Product
-import com.mohamedhashim.mobiquity.ui.base.bindings.DataBindingFragment
 import com.mohamedhashim.mobiquityapp.R
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Product
+import com.mohamedhashim.mobiquityapp.ui.base.bindings.DataBindingFragment
 import com.mohamedhashim.mobiquityapp.databinding.FragmentProductDetailsBinding
-import kotlinx.android.synthetic.main.fragment_categories_list.*
+import kotlinx.android.synthetic.main.fragment_product_details.*
 
 /**
  * Created by Mohamed Hashim on 4/12/2021.

@@ -1,6 +1,6 @@
-package com.mohamedhashim.mobiquity.data.remote.service
+package com.mohamedhashim.mobiquityapp.data.remote.service
 
-import com.mohamedhashim.mobiquity.data.entities.dto.Category
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Category
 import retrofit2.Call
 import retrofit2.http.GET
 
@@ -9,6 +9,7 @@ import retrofit2.http.GET
  */
 
 interface CategoriesService {
+
     @GET("/")
     fun fetchCategories(): Call<List<Category>>
 }

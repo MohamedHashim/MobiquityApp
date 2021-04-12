@@ -4,11 +4,11 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import com.mohamedhashim.mobiquity.ApiUtil.getCall
 import com.mohamedhashim.mobiquity.MockTestUtils.Companion.mockCategoriesList
-import com.mohamedhashim.mobiquity.data.entities.dto.Category
-import com.mohamedhashim.mobiquity.data.remote.ApiResponse
-import com.mohamedhashim.mobiquity.data.remote.client.CategoriesClient
-import com.mohamedhashim.mobiquity.data.remote.repository.CategoriesRepository
-import com.mohamedhashim.mobiquity.data.remote.service.CategoriesService
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Category
+import com.mohamedhashim.mobiquityapp.data.remote.ApiResponse
+import com.mohamedhashim.mobiquityapp.data.remote.client.CategoriesClient
+import com.mohamedhashim.mobiquityapp.data.remote.repository.CategoriesRepository
+import com.mohamedhashim.mobiquityapp.data.remote.service.CategoriesService
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever

@@ -1,20 +1,22 @@
-package com.mohamedhashim.mobiquity
+package com.mohamedhashim.mobiquityapp
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import com.mohamedhashim.mobiquity.ApiUtil.getCall
-import com.mohamedhashim.mobiquity.data.entities.dto.Category
-import com.mohamedhashim.mobiquity.data.remote.client.CategoriesClient
-import com.mohamedhashim.mobiquity.data.remote.repository.CategoriesRepository
-import com.mohamedhashim.mobiquity.data.remote.service.CategoriesService
-import com.mohamedhashim.mobiquity.ui.component.categories.CategoriesViewModel
+import com.mohamedhashim.mobiquity.MockTestUtils
+import com.mohamedhashim.mobiquityapp.data.entities.dto.Category
+import com.mohamedhashim.mobiquityapp.data.remote.client.CategoriesClient
+import com.mohamedhashim.mobiquityapp.data.remote.repository.CategoriesRepository
+import com.mohamedhashim.mobiquityapp.data.remote.service.CategoriesService
+import com.mohamedhashim.mobiquityapp.ui.component.categories.CategoriesViewModel
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
 import kotlinx.coroutines.runBlocking
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mockito.Mockito.*
+import org.mockito.Mockito.atLeastOnce
+import org.mockito.Mockito.verify
 
 /**
  * Created by Mohamed Hashim on 4/12/2021.
