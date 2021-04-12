@@ -9,4 +9,10 @@ import kotlinx.android.parcel.Parcelize
  * Created by Mohamed Hashim on 4/12/2021.
  */
 @Parcelize
-class Product : Parcelable
+class Product(
+    @PrimaryKey var id: String,
+    var name: String,
+    var url: String,
+    var description: String,
+    var salePrice: SalePrice,
+) : Parcelable

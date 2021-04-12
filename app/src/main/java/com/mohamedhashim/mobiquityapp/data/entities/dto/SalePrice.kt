@@ -8,4 +8,7 @@ import kotlinx.android.parcel.Parcelize
  * Created by Mohamed Hashim on 4/12/2021.
  */
 @Parcelize
-class SalePrice : Parcelable
+class SalePrice(
+    var amount: String,
+    var currency: String,
+) : Parcelable

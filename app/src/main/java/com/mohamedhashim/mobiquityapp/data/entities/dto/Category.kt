@@ -9,4 +9,9 @@ import kotlinx.android.parcel.Parcelize
  * Created by Mohamed Hashim on 4/12/2021.
  */
 @Parcelize
-class Category : Parcelable
+class Category(
+    val id: String,
+    val name: String,
+    val description: String,
+    val products: List<Product>
+) : Parcelable
